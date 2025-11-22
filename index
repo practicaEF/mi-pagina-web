@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Sitio Web</title>
+    <base href="https://www.misitioweb.com/">
+    <link  rel="stylesheet" href="styles.css">
+
+    <meta name="keywords" content="HTML, Ventas, Perfumes">
+
+
+</head>
+
+</html>

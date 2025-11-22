@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="viewport" content="width=device-widt. initial-scale=1.0">
+    <link rel="stylesheet">
+    <title>Contacto</title>
+
+</head>
+<body>
+    <div class="division">
+        <form action="#">
+
+            <input type="text" class="formulario" id="nombre" name="Nombre" placeholder="Nombre:" value="">
+
+            <input type="text" class="formulario" id="Correo" name="Nombre" placeholder="Correo:" value="">
+
+            <textarea class="mensaje" id="mensaje" name="mensaje" 
+
+
+
+
+        </form>

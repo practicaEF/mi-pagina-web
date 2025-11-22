@@ -1,0 +1,146 @@
+:root {
+    --verde: #4CAF50;
+    --blanco: #FFFFFF;
+    --gris-oscuro: #424242;
+    --amarillo-suave: #FFD54F;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--blanco);
+    margin: 0;
+    padding: 0;
+    color: var(--gris-oscuro);
+}
+
+header {
+    background-color: var(--verde);
+    color: var(--blanco);
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    background-color: var(--gris-oscuro);
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: var(--blanco);
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    background-color: var(--amarillo-suave);
+    color: var(--gris-oscuro);
+}
+
+.container {
+    padding: 20px;
+}
+
+footer {
+    background-color: var(--gris-oscuro);
+    color: var(--blanco);
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Sección de Información */
+.info-adicional,
+.info-separar,
+.info-reciclaje,
+.info-horarios {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.info-adicional h2,
+.info-separar h2,
+.info-reciclaje h2,
+.info-horarios h2 {
+    font-size: 1.5rem;
+    color: var(--verde);
+}
+
+.info-adicional p,
+.info-separar p,
+.info-reciclaje p,
+.info-horarios p {
+    font-size: 1rem;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.info-adicional ul,
+.info-separar ul,
+.info-reciclaje ul,
+.info-horarios ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.info-adicional ul li,
+.info-separar ul li,
+.info-reciclaje ul li,
+.info-horarios ul li {
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.info-adicional ul li::before,
+.info-separar ul li::before,
+.info-reciclaje ul li::before,
+.info-horarios ul li::before {
+    content: "✔️";
+    margin-right: 10px;
+}
+
+/* Botón y Videos */
+.videos-reciclaje {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.boton-videos {
+    background-color: var(--verde);
+    color: var(--blanco);
+    border: none;
+    padding: 10px 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.boton-videos:hover {
+    background-color: var(--amarillo-suave);
+    color: var(--gris-oscuro);
+    transform: scale(1.05);
+}
+
+.videos-reciclaje h2 {
+    color: var(--verde);
+    margin-bottom: 20px;
+}
+
+.videos-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}

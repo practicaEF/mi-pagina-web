@@ -1,0 +1,74 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ResiWeb - Gestión de Residuos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ResiWeb - Gestión de Residuos</h1>
+        <p>Haz tu parte para una ciudad más limpia y responsable con el medio ambiente</p>
+        <img src="Imagenes/resiweb.png" alt="Resiweb" width="400" height="200">
+    </header>
+
+    <nav>
+        <a href="horarios.html">Horarios de Recolección</a>
+        <a href="reciclaje.html">Centros de Reciclaje</a>
+        <a href="separar.html">Cómo Separar la Basura</a>
+    </nav>
+
+        <div class="videos-reciclaje">
+        <button class="boton-videos" onclick="mostrarVideos()">🎥 VER VIDEOS EDUCATIVOS SOBRE RECICLAJE ♻️</button>
+    
+        <div id="contenedorVideos" style="display: none; margin-top: 30px;">
+            <h2>Videos sobre Reciclaje</h2>
+    
+            <div class="videos-grid">
+                <iframe width="360" height="215" src="https://www.youtube.com/embed/cvakvfXj0KE" frameborder="0" allowfullscreen></iframe>
+                <iframe width="360" height="215" src="https://www.youtube.com/embed/YiHTNfKJwAw" frameborder="0" allowfullscreen></iframe>
+                <iframe width="360" height="215" src="https://www.youtube.com/embed/WVrxkF6TcQU" frameborder="0" allowfullscreen></iframe>
+                <iframe width="360" height="215" src="https://www.youtube.com/embed/YgES1DyjeGs" frameborder="0" allowfullscreen></iframe>
+                <iframe width="360" height="215" src="https://www.youtube.com/embed/0i99_Lkvjm0" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+    function mostrarVideos() {
+        const contenedor = document.getElementById('contenedorVideos');
+        contenedor.style.display = contenedor.style.display === "none" ? "block" : "none";
+    }
+    </script>
+    
+    <div class="info-adicional">
+        <h2>¿Por qué es importante la gestión de residuos?</h2>
+        <p>La correcta gestión de residuos es esencial para proteger nuestro medio ambiente. Aquí te dejamos algunas razones clave:</p>
+        <ul>
+            <li>Disminuye la contaminación del aire y agua.</li>
+            <li>Reduce la cantidad de desechos en vertederos y aumenta la eficiencia del reciclaje.</li>
+            <li>Ayuda a conservar recursos naturales para las futuras generaciones.</li>
+            <li>Promueve la conciencia ambiental en la comunidad.</li>
+            <li>Contribuye al desarrollo de una economía circular.</li>
+        </ul>
+        <p>¡Recuerda! Cada pequeño esfuerzo cuenta. Sigamos trabajando juntos por un futuro más limpio y sostenible.</p>
+    </div>
+
+    <div style="text-align: center; margin: 30px 0;">
+        <button onclick="mostrarMensaje()">¿Te unes al cambio?</button>
+    </div>
+
+    <script>
+        function mostrarMensaje() {
+            alert("¡Gracias por comprometerte con el medio ambiente!");
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2025 ResiWeb - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
